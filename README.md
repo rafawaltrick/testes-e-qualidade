@@ -55,27 +55,39 @@ Implementar o método `isValidToInclude` na classe `Person` utilizando a abordag
     * Chamar o método `isValidToInclude` no objeto inválido e verificar se a lista de erros contém a mensagem de erro esperada.
 * Execute os testes usando o comando `python3 -m unittest testes_person.py`.
 
-**2. Implementar o método `isValidToInclude` (person.py):**
 
-* Crie um novo arquivo `person.py` para definir as classes `Person` e `Email`.
-* Na classe `Person`, defina o método `isValidToInclude` que recebe um objeto `Person` como parâmetro:
-    * Crie uma lista vazia para armazenar os erros.
-    * Valide o nome:
-        * Verifique se o nome está vazio ou contém apenas espaços.
-        * Verifique se o nome possui pelo menos 2 partes separadas por espaços.
-        * Verifique se todas as partes do nome contêm apenas letras.
-        * Adicione a mensagem de erro para cada regra violada à lista de erros.
-    * Valide a idade:
-        * Verifique se a idade está dentro do intervalo [1, 200].
-        * Adicione a mensagem de erro à lista de erros se a idade for inválida.
-    * Valide a existência de pelo menos um e-mail:
-        * Verifique se a lista de e-mails do objeto `Person` está vazia.
-        * Adicione a mensagem de erro à lista de erros se não houver e-mails.
-    * Valide cada e-mail:
-        * Crie um método auxiliar para validar o formato do e-mail (formato esperado: nome@dominio.extensao).
-        * Para cada e-mail na lista, utilize o método auxiliar para verificar se o formato é válido.
-        * Adicione a mensagem de erro à lista de erros se o e-mail for inválido.
-    * Retorne a lista de erros.
-* Execute os testes novamente para garantir que o método `isValidToInclude` esteja funcionando corretamente.
+
+## Estrutura de Arquivos e Execução Calculadora de Salário com TDD
+
+**Estrutura de Arquivos:**
+
+```
+calculadora_salario/
+├── testes_calculadora_salario.py      
+├── calculadora_salario.py           
+```
+
+**Execução Simples:**
+
+**1. Pré-requisitos:**
+
+* Python 3 instalado
+* Editor de código (Visual Studio Code, PyCharm, Sublime Text, etc.)
+
+**2. Passos:**
+
+1. **Crie o diretório:**
+    * Crie um diretório chamado `calculadora_salario` no local desejado.
+2. **Baixe os arquivos:**
+    * Baixe os arquivos `testes_calculadora_salario.py`, `calculadora_salario.py` e `README.md` para dentro do diretório `calculadora_salario`.
+3. **Abra o editor de código:**
+    * Abra o diretório `calculadora_salario` no seu editor de código.
+4. **Execute os testes:**
+    * No terminal, navegue até o diretório `calculadora_salario`.
+    * Execute o comando:
+
+```
+python3 testes_calculadora_salario.py
+```
 
 
